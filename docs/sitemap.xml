@@ -3,6 +3,201 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chrisalbon.com/data_science_management/what_i_said_to_my_team_during_covid-19/</loc>
+    <lastmod>2020-03-23T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/deep_learning/pytorch/basics/check_if_pytorch_is_using_gpu/</loc>
+    <lastmod>2020-02-01T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/deep_learning/setup/prevent_nvidia_drivers_from_upgrading/</loc>
+    <lastmod>2020-02-01T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/git_and_github/basics/stop_git_from_asking_for_password_every_command/</loc>
+    <lastmod>2020-02-01T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/add_column/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/add_comment_to_column/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/convert_columns_into_rows/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/convert_data_types/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/create_dummy_columns/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/create_or_replace_table/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/create_table/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/create_table_from_query/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/create_table_if_does_not_already_exist/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/create_table_with_column_and_table_comments/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/create_temporary_table/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/delete_table/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/describe_table/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/drop_column/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/numeric/get_absolute_values/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/get_rows_meeting_multiple_conditions/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/give_column_alias/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/give_table_alias/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/merge_and_join/left_join/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/query_table/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/query_describe_statement/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/rename_column/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/rename_table/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/return_first_few_rows/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/return_n_rows_after_skipping_k_rows/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/sample_rows_from_table/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/basics/sort_rows/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/swap_two_tables/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/undelete_table/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/view_column_comments/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/sql/tables/view_table_comments/</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/python/object_oriented/create_a_class/</loc>
+    <lastmod>2018-12-16T11:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/python/object_oriented/create_attributes/</loc>
+    <lastmod>2018-12-16T11:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/python/object_oriented/create_methods/</loc>
+    <lastmod>2018-12-16T11:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/python/basics/list_all_files_of_particular_type_in_directory/</loc>
+    <lastmod>2018-11-20T11:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chrisalbon.com/linux/text/add_columns_to_text/</loc>
     <lastmod>2018-07-16T00:00:00-07:00</lastmod>
   </url>
@@ -109,6 +304,11 @@
   
   <url>
     <loc>https://chrisalbon.com/postgresql/numeric/max_min_and_average_of_column/</loc>
+    <lastmod>2018-06-17T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/postgresql/interview_questions/calculate_requests_sent/</loc>
     <lastmod>2018-06-17T00:00:00-07:00</lastmod>
   </url>
   
@@ -623,6 +823,11 @@
   </url>
   
   <url>
+    <loc>https://chrisalbon.com/linux/search/search_contents_of_all_files_of_certain_type/</loc>
+    <lastmod>2018-06-17T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chrisalbon.com/linux/search/search_file_names/</loc>
     <lastmod>2018-06-17T00:00:00-07:00</lastmod>
   </url>
@@ -669,6 +874,11 @@
   
   <url>
     <loc>https://chrisalbon.com/linux/inputs_and_outputs/silence_errors/</loc>
+    <lastmod>2018-06-17T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/postgresql/interview_questions/sort_column_natural_ordering/</loc>
     <lastmod>2018-06-17T00:00:00-07:00</lastmod>
   </url>
   
@@ -759,6 +969,11 @@
   
   <url>
     <loc>https://chrisalbon.com/postgresql/basics/view_unique_values/</loc>
+    <lastmod>2018-06-17T00:00:00-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/postgresql/interview_questions/what_happens_when_you_add_null_and_integer/</loc>
     <lastmod>2018-06-17T00:00:00-07:00</lastmod>
   </url>
   
@@ -1608,7 +1823,7 @@
   </url>
   
   <url>
-    <loc>https://chrisalbon.com/git/github_cheatsheet/</loc>
+    <loc>https://chrisalbon.com/git_and_github/basics/github_cheatsheet/</loc>
     <lastmod>2017-12-20T11:53:49-07:00</lastmod>
   </url>
   
@@ -2743,6 +2958,11 @@
   </url>
   
   <url>
+    <loc>https://chrisalbon.com/statistics/basics/trimmed_mean/</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://chrisalbon.com/scala/basics/try_catch_finally/</loc>
     <lastmod>2017-12-20T11:53:49-07:00</lastmod>
   </url>
@@ -2918,8 +3138,104 @@
   </url>
   
   <url>
+    <loc>https://chrisalbon.com/about/index.xml</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/articles/index.xml</loc>
+    <lastmod>2016-02-01T11:53:49-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/aws/index.xml</loc>
+    <lastmod>2018-06-17T00:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chrisalbon.com/</loc>
+    <lastmod>2020-03-23T00:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/computer_science/index.xml</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/data_science_management/index.xml</loc>
+    <lastmod>2020-03-23T00:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/deep_learning/index.xml</loc>
+    <lastmod>2020-02-01T00:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/git_and_github/index.xml</loc>
+    <lastmod>2020-02-01T00:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/linux/index.xml</loc>
     <lastmod>2018-07-16T00:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/machine_learning/index.xml</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/mathematics/index.xml</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/postgresql/index.xml</loc>
+    <lastmod>2018-06-18T11:53:49-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/python/index.xml</loc>
+    <lastmod>2018-12-16T11:53:49-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/regex/index.xml</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/scala/index.xml</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/snowflake/index.xml</loc>
+    <lastmod>2019-01-28T00:00:00-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chrisalbon.com/statistics/index.xml</loc>
+    <lastmod>2017-12-20T11:53:49-07:00</lastmod>
     <priority>0</priority>
   </url>
   

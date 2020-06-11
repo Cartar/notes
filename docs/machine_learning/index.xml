@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Machine_learnings on Chris Albon</title>
-    <link>https://chrisalbon.com/machine_learning/</link>
-    <description>Recent content in Machine_learnings on Chris Albon</description>
+    <title> - Chris Albon</title>
+    <link>https://chrisalbon.com/machine_learning/index.xml</link>
+    <description></description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Dec 2017 11:53:49 -0700</lastBuildDate>
     
-	<atom:link href="https://chrisalbon.com/machine_learning/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chrisalbon.com/machine_learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -165,7 +165,7 @@ Preliminaries # Load libraries import numpy as np from sklearn.naive_bayes impor
       <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
       
       <guid>https://chrisalbon.com/machine_learning/vectors_matrices_and_arrays/calculate_the_trace_of_a_matrix/</guid>
-      <description> Preliminaries # Load library import numpy as np Create Matrix # Create matrix matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) Calculate The Trace # Calculate the tracre of the matrix matrix.diagonal().sum() 15  </description>
+      <description> Preliminaries # Load library import numpy as np Create Matrix # Create matrix matrix = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]]) Calculate The Trace # Calculate the trace of the matrix matrix.diagonal().sum() 15  </description>
     </item>
     
     <item>
@@ -340,7 +340,7 @@ In this tutorial we work through an example which combines cross validation and 
       <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
       
       <guid>https://chrisalbon.com/machine_learning/clustering/dbscan_clustering/</guid>
-      <description>Preliminaries # Load libraries from sklearn import datasets from sklearn.preprocessing import StandardScaler from sklearn.cluster import DBSCAN Load Iris Flower Dataset # Load data iris = datasets.load_iris() X = iris.data Standardize Features # Standarize features scaler = StandardScaler() X_std = scaler.fit_transform(X) Conduct Meanshift Clustering DBSCAN has three main parameters to set:
+      <description>Preliminaries # Load libraries from sklearn import datasets from sklearn.preprocessing import StandardScaler from sklearn.cluster import DBSCAN Load Iris Flower Dataset # Load data iris = datasets.load_iris() X = iris.data Standardize Features # Standarize features scaler = StandardScaler() X_std = scaler.fit_transform(X) Conduct DBSCAN Clustering DBSCAN has three main parameters to set:
  eps: The maximum distance from an observation for another observation to be considered its neighbor. min_samples: The minimum number of observation less than eps distance from an observation for to be considered a core observation.</description>
     </item>
     
@@ -451,7 +451,7 @@ Preliminaries # Load libraries from sklearn.decomposition import PCA, KernelPCA 
       <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
       
       <guid>https://chrisalbon.com/machine_learning/feature_selection/drop_highly_correlated_features/</guid>
-      <description>Preliminaries # Load libraries import pandas as pd import numpy as np Load Data # Create feature matrix with two highly correlated features X = np.array([[1, 1, 1], [2, 2, 0], [3, 3, 1], [4, 4, 0], [5, 5, 1], [6, 6, 0], [7, 7, 1], [8, 7, 0], [9, 7, 1]]) # Convert feature matrix into DataFrame df = pd.DataFrame(X) # View the data frame df   .</description>
+      <description>Preliminaries # Load libraries import pandas as pd import numpy as np Load Data # Create feature matrix with two highly correlated features X = np.array([[1, 1, 1], [2, 2, 0], [3, 3, 1], [4, 4, 0], [5, 5, 1], [6, 6, 0], [7, 7, 1], [8, 7, 0], [9, 7, 1]]) # Convert feature matrix into DataFrame df = pd.DataFrame(X) # View the data frame df  .dataframe tbody tr th:only-of-type { vertical-align: middle; } .</description>
     </item>
     
     <item>
@@ -844,7 +844,7 @@ KNN has three basic parts:
       <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
       
       <guid>https://chrisalbon.com/machine_learning/linear_regression/lasso_regression/</guid>
-      <description>Preliminaries # Load library from sklearn.linear_model import Lasso from sklearn.datasets import load_boston from sklearn.preprocessing import StandardScaler Load Boston Housing Dataset # Load data boston = load_boston() X = boston.data y = boston.target Standardize Features # Standarize features scaler = StandardScaler() X_std = scaler.fit_transform(X) Fit Ridge Regression The hyperparameter, $\alpha$, lets us control how much we penalize the coefficients, with higher values of $\alpha$ creating simpler modelers. The ideal value of $\alpha$ should be tuned like any other hyperparameter.</description>
+      <description>Preliminaries # Load library from sklearn.linear_model import Lasso from sklearn.datasets import load_boston from sklearn.preprocessing import StandardScaler Load Boston Housing Dataset # Load data boston = load_boston() X = boston.data y = boston.target Standardize Features # Standarize features scaler = StandardScaler() X_std = scaler.fit_transform(X) Fit Lasso Regression The hyperparameter, $\alpha$, lets us control how much we penalize the coefficients, with higher values of $\alpha$ creating simpler modelers. The ideal value of $\alpha$ should be tuned like any other hyperparameter.</description>
     </item>
     
     <item>
@@ -1076,7 +1076,7 @@ Preliminaries # Load libraries import numpy as np from sklearn.naive_bayes impor
       <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
       
       <guid>https://chrisalbon.com/machine_learning/preprocessing_structured_data/one-hot_encode_nominal_categorical_features/</guid>
-      <description>Preliminaries # Load libraries import numpy as np import pandas as pd from sklearn.preprocessing import LabelBinarizer Create Data With One Class Label # Create NumPy array x = np.array([[&amp;#39;Texas&amp;#39;], [&amp;#39;California&amp;#39;], [&amp;#39;Texas&amp;#39;], [&amp;#39;Delaware&amp;#39;], [&amp;#39;Texas&amp;#39;]]) One-hot Encode Data (Method 1) # Create LabelBinzarizer object one_hot = LabelBinarizer() # One-hot encode data one_hot.fit_transform(x) array([[0, 0, 1], [1, 0, 0], [0, 0, 1], [0, 1, 0], [0, 0, 1]])  View Column Headers # View classes one_hot.</description>
+      <description>Preliminaries # Load libraries import numpy as np import pandas as pd from sklearn.preprocessing import OneHotEncoder Create Data With One Class Label # Create NumPy array x = np.array([[&amp;#39;Texas&amp;#39;], [&amp;#39;California&amp;#39;], [&amp;#39;Texas&amp;#39;], [&amp;#39;Delaware&amp;#39;], [&amp;#39;Texas&amp;#39;]]) One-hot Encode Data (Method 1) # Create LabelBinzarizer object one_hot = OneHotEncoder() # One-hot encode data one_hot.fit_transform(x) &amp;lt;5x3 sparse matrix of type &#39;&amp;lt;class &#39;numpy.float64&#39;&amp;gt;&#39; with 5 stored elements in Compressed Sparse Row format&amp;gt;  View Column Headers # View classes one_hot.</description>
     </item>
     
     <item>
@@ -1418,7 +1418,7 @@ Specifically, we can run LinearDiscriminantAnalysis with n_components set to Non
       
       <guid>https://chrisalbon.com/machine_learning/preprocessing_structured_data/standardize_a_feature/</guid>
       <description> 
-Preliminaries # Load libraries from sklearn import preprocessing import numpy as np Create Feature # Create feature x = np.array([[-500.5], [-100.1], [0], [100.1], [900.9]]) Standardize Feature # Create scaler scaler = preprocessing.StandardScaler() # Transform the feature standardized = scaler.fit_transform(x) # Show feature standardized array([[ 0. ], [ 0.28571429], [ 0.35714286], [ 0.42857143], [ 1. ]])  </description>
+Preliminaries # Load libraries from sklearn import preprocessing import numpy as np Create Feature # Create feature x = np.array([[-500.5], [-100.1], [0], [100.1], [900.9]]) Standardize Feature # Create scaler scaler = preprocessing.StandardScaler() # Transform the feature standardized = scaler.fit_transform(x) # Show feature standardized array([[-1.26687088], [-0.39316683], [-0.17474081], [ 0.0436852 ], [ 1.79109332]])  </description>
     </item>
     
     <item>

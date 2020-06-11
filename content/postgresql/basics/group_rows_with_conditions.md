@@ -1,11 +1,13 @@
 ---
-title: "Group Rows"
+title: "Group Rows With Conditions"
 author: "Chris Albon"
 date: 2018-06-17T00:00:00-07:00
 description: "How to group rows in an SQL database."
 type: technical_note
 draft: false
 ---
+
+`WHERE` filters rows before grouping (i.e. `GROUP BY`) while `HAVING` filters rows after grouping.
 
 ## Create Table
 

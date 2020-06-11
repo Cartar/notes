@@ -40,8 +40,8 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="One-Hot Encode Nominal Categorical Features"/>
 <meta name="twitter:description" content="How to one-hot encode nominal categorical features for machine learning in Python."/>
-<meta name="generator" content="Hugo 0.40.1" /> 
-    
+<meta name="generator" content="Hugo 0.40.1" />
+
     
 <script type="application/ld+json">
 {
@@ -49,7 +49,7 @@
   "@type": "BlogPosting",
   "headline": "One-Hot Encode Nominal Categorical Features",
   "url": "https://chrisalbon.com/machine_learning/preprocessing_structured_data/one-hot_encode_nominal_categorical_features/",
-  "wordCount": "131",
+  "wordCount": "132",
   "datePublished": "2017-12-20T11:53:49-07:00",
   "dateModified": "2017-12-20T11:53:49-07:00",
   "author": {
@@ -70,9 +70,12 @@
     <link href="https://chrisalbon.com/css/custom.css" rel="stylesheet"> 
     <link href="https://chrisalbon.com/css/syntax.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,500,700" rel="stylesheet">
-        
-    <link href="" rel="alternate" type="application/rss+xml" title="Chris Albon" /> 
+
     
+    <link href="" rel="alternate" type="application/rss+xml" title="Chris Albon All Notes And Articles" /> 
+    
+    <link href="https://chrisalbon.com//articles/index.xml" rel="alternate" type="application/rss+xml" title="Chris Albon Articles" />
+
     <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
@@ -105,10 +108,11 @@ MathJax.Hub.Config({
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="nav navbar-nav mr-auto"></ul>
                 <ul class="navbar-nav">
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                            ML/AI Notes
+                            Technical Notes
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="https://chrisalbon.com/#machine_learning">Machine Learning</a>
@@ -116,14 +120,20 @@ MathJax.Hub.Config({
                             <a class="dropdown-item" href="https://chrisalbon.com/#python">Python</a>
                             <a class="dropdown-item" href="https://chrisalbon.com/#statistics">Statistics</a>
                             <a class="dropdown-item" href="https://chrisalbon.com/#scala">Scala</a>
+                            <a class="dropdown-item" href="https://chrisalbon.com/#snowflake">Snowflake</a>
                             <a class="dropdown-item" href="https://chrisalbon.com/#postgresql">PostgreSQL</a>
                             <a class="dropdown-item" href="https://chrisalbon.com/#linux">Command Line</a>
                             <a class="dropdown-item" href="https://chrisalbon.com/#regex">Regular Expressions</a>
                             <a class="dropdown-item" href="https://chrisalbon.com/#mathematics">Mathematics</a>
                             <a class="dropdown-item" href="https://chrisalbon.com/#aws">AWS</a>
+                            <a class="dropdown-item" href="https://chrisalbon.com/#git_and_github">Git &amp; GitHub</a>
                             <a class="dropdown-item" href="https://chrisalbon.com/#computer_science">Computer Science</a>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://chrisalbon.com/#data_science_management">Management</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="https://chrisalbon.com/#articles">Articles</a>
                     </li>
@@ -136,7 +146,9 @@ MathJax.Hub.Config({
                             <a class="dropdown-item" href="https://chrisalbon.com/about/chris_albon/">About Chris</a>
                             <a class="dropdown-item" href="https://github.com/chrisalbon">GitHub</a>
                             <a class="dropdown-item" href="https://twitter.com/chrisalbon">Twitter</a>
-                            <a class="dropdown-item" href="https://www.instagram.com/chrisalbon/">Instagram</a>
+                            <a class="dropdown-item" href="https://www.amazon.com/Machine-Learning-Python-Cookbook-Preprocessing/dp/1491989386">ML Book</a>
+                            <a class="dropdown-item" href="https://machinelearningflashcards.com/">ML Flashcards</a>
+                            
                         </div>
                     </li>
                 </ul>
@@ -165,6 +177,7 @@ MathJax.Hub.Config({
     </div>
   </header>
   <div class="content">
+      
   
 
 <p><a alt="One-hot encoding" href="https://machinelearningflashcards.com">
@@ -175,7 +188,7 @@ MathJax.Hub.Config({
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Load libraries</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelBinarizer</span></code></pre></div>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span></code></pre></div>
 <h2 id="create-data-with-one-class-label">Create Data With One Class Label</h2>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Create NumPy array</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="s1">&#39;Texas&#39;</span><span class="p">],</span> 
@@ -185,39 +198,35 @@ MathJax.Hub.Config({
               <span class="p">[</span><span class="s1">&#39;Texas&#39;</span><span class="p">]])</span></code></pre></div>
 <h2 id="one-hot-encode-data-method-1">One-hot Encode Data (Method 1)</h2>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Create LabelBinzarizer object</span>
-<span class="n">one_hot</span> <span class="o">=</span> <span class="n">LabelBinarizer</span><span class="p">()</span>
+<span class="n">one_hot</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
 
 <span class="c1"># One-hot encode data</span>
 <span class="n">one_hot</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code></pre></div>
-<pre><code>array([[0, 0, 1],
-       [1, 0, 0],
-       [0, 0, 1],
-       [0, 1, 0],
-       [0, 0, 1]])
+<pre><code>&lt;5x3 sparse matrix of type '&lt;class 'numpy.float64'&gt;'
+    with 5 stored elements in Compressed Sparse Row format&gt;
 </code></pre>
 
 <h2 id="view-column-headers">View Column Headers</h2>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># View classes</span>
-<span class="n">one_hot</span><span class="o">.</span><span class="n">classes_</span></code></pre></div>
-<pre><code>array(['California', 'Delaware', 'Texas'],
-      dtype='&lt;U10')
+<span class="n">one_hot</span><span class="o">.</span><span class="n">categories_</span></code></pre></div>
+<pre><code>[array(['California', 'Delaware', 'Texas'], dtype='&lt;U10')]
 </code></pre>
 
 <h2 id="one-hot-encode-data-method-2">One-hot Encode Data (Method 2)</h2>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># Dummy feature</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">get_dummies</span><span class="p">(</span><span class="n">x</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span></code></pre></div>
 <div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
     }
 
     .dataframe tbody tr th {
         vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
     }
 </style>
 <table border="1" class="dataframe">
@@ -268,7 +277,7 @@ MathJax.Hub.Config({
   <aside>
       <div class="bug_reporting">
           <h4>Find an error or bug?</h4>
-          <p>Everything on this site is available on GitHub. Head to <a href='https://github.com/chrisalbon/notes/issues/new'>and submit a suggested change</a>. You can also message me directly on <a href='https://twitter.com/chrisalbon'>Twitter</a>.</p>
+          <p>Everything on this site is available on GitHub. Head to <a href='https://github.com/chrisalbon/notes/issues/new'>and submit a suggested change</a>. Include the tutorial's URL in the issue.</p>
       </div>
       </aside>
 
@@ -287,7 +296,7 @@ MathJax.Hub.Config({
 
     <footer class="footer text-center">
         <div class="container">
-            <span class="text-muted">This project contains 583 pages and is available on <a href="https://github.com/chrisalbon/notes">GitHub</a>. Copyright &copy; Chris Albon, <time datetime="2018">2018</time>.</span>
+            <span class="text-muted">Copyright &copy; Chris Albon, <time datetime="2020">2020</time>. All 627 notes and articles are available on <a href="https://github.com/chrisalbon/notes">GitHub</a>.</span>
         </div>
     </footer>
 

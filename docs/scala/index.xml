@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Scalas on Chris Albon</title>
-    <link>https://chrisalbon.com/scala/</link>
-    <description>Recent content in Scalas on Chris Albon</description>
+    <title> - Chris Albon</title>
+    <link>https://chrisalbon.com/scala/index.xml</link>
+    <description></description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Dec 2017 11:53:49 -0700</lastBuildDate>
     
-	<atom:link href="https://chrisalbon.com/scala/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://chrisalbon.com/scala/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -62,7 +62,7 @@
       <pubDate>Wed, 20 Dec 2017 11:53:49 -0700</pubDate>
       
       <guid>https://chrisalbon.com/scala/basics/extract_substring_using_regex/</guid>
-      <description> Create String // Create a string value val text: String = &amp;#34;27 aircraft&amp;#34; Create Regex Pattern // Create a regex with two pattern matches (one number and one word) val pattern = &amp;#34;([0-9]+) ([A-Za-z]+)&amp;#34;.r Extract Substrings That Match Regex // Apply the regex pattern such that each of the two pattern matches is assigned to a seperate value val pattern(vehicle_number, vehicle_type) = text View Output // View the value vehicle_number 27  // View the value vehicle_type aircraft  </description>
+      <description> Create String // Create a string value val text: String = &amp;#34;27 aircraft&amp;#34; Create Regex Pattern // Create a regex with two pattern matches (one number and one word) val pattern = &amp;#34;([0-9]+) ([A-Za-z]+)&amp;#34;.r Extract Substrings That Match Regex // Apply the regex pattern such that each of the two pattern matches is assigned to a separate value val pattern(vehicle_number, vehicle_type) = text View Output // View the value vehicle_number 27  // View the value vehicle_type aircraft  </description>
     </item>
     
     <item>
